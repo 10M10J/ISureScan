@@ -141,7 +141,7 @@ def main():
     language_option = ""
 
     # Get the Groq API key and create a Groq client
-    groq_api_key = dotenv_values(".env")['GROQ_API_KEY']
+    groq_api_key = dotenv_values(".env")(st.secrets['GROQ_API_KEY'])
     # load_dotenv()
     # groq_api_key = os.environ['GROQ_API_KEY']
     client = Groq(
