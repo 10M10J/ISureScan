@@ -6,7 +6,7 @@ import os
 import pickle
 from groq import Groq
 from PyPDF2 import PdfReader
-from streamlit_extras.add_vertical_space import add_vertical_space
+# from streamlit_extras.add_vertical_space import add_vertical_space
 # from langchain.text_splitter import RecursiveCharacterTextSplitter
 # from langchain.VectorStores import FAISS
 # from langchain.chains import ConversationChain
@@ -126,9 +126,12 @@ def main():
         ISureScan.ai offers a revolutionary approach to insurance document management. 
         Leveraging state-of-the-art natural language processing (NLP) and Generative AI (GenAI) technology,
         our app empowers users to effortlessly upload insurance documents and extract essential information.
+        Ensure your health coverage! Upload your medical insurance policy in the provided box for personalized insights.
+        Need assistance or have questions? Use our AI chatbot for instant support and clarity. 
+        Your well-being matters to us!
 
         ''')
-        add_vertical_space(5)
+    #    add_vertical_space(5)
         st.write('Made in India :flag-in: by [StirPot](https://stirpot.in/)')
 
         model = "llama3-8b-8192"
