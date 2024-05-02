@@ -1,11 +1,12 @@
 import time
 import streamlit as st
-from dotenv import load_dotenv
+from dotenv import dotenv_values
+# from dotenv import load_dotenv
 import os
 import pickle
 from groq import Groq
 from PyPDF2 import PdfReader
-# from streamlit_extras.add_vertical_space import add_vertical_space
+from streamlit_extras.add_vertical_space import add_vertical_space
 # from langchain.text_splitter import RecursiveCharacterTextSplitter
 # from langchain.VectorStores import FAISS
 # from langchain.chains import ConversationChain
@@ -127,7 +128,7 @@ def main():
         our app empowers users to effortlessly upload insurance documents and extract essential information.
 
         ''')
-        # add_vertical_space(5)
+        add_vertical_space(5)
         st.write('Made in India :flag-in: by [StirPot](https://stirpot.in/)')
 
         model = "llama3-8b-8192"
@@ -137,8 +138,9 @@ def main():
     language_option = ""
 
     # Get the Groq API key and create a Groq client
-    load_dotenv()
-    groq_api_key = os.environ['GROQ_API_KEY']
+    groq_api_key = dotenv_values(".env")['GROQ_API_KEY']
+    # load_dotenv()
+    # groq_api_key = os.environ['GROQ_API_KEY']
     client = Groq(
         api_key=groq_api_key,
         # base_url=st.secrets["GROQ_BASE_URL"]
