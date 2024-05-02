@@ -150,7 +150,7 @@ def main():
         # base_url=st.secrets["GROQ_BASE_URL"]
     )
 
-    st.header("Chat with your Insurance Policy", divider='rainbow')
+    st.header("Chat with your Insurance Policy")
 
     language_option = st.radio('Select your preferred Language of interaction',
                                ('English', 'Hindi'), index=0, horizontal=True)
