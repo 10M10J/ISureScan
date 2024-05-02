@@ -5,7 +5,7 @@ import os
 import pickle
 from groq import Groq
 from PyPDF2 import PdfReader
-#from streamlit_extras.add_vertical_space import add_vertical_space
+# from streamlit_extras.add_vertical_space import add_vertical_space
 # from langchain.text_splitter import RecursiveCharacterTextSplitter
 # from langchain.VectorStores import FAISS
 # from langchain.chains import ConversationChain
@@ -127,7 +127,7 @@ def main():
         our app empowers users to effortlessly upload insurance documents and extract essential information.
 
         ''')
-        add_vertical_space(5)
+        # add_vertical_space(5)
         st.write('Made in India :flag-in: by [StirPot](https://stirpot.in/)')
 
         model = "llama3-8b-8192"
