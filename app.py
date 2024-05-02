@@ -1,7 +1,7 @@
 import time
 import streamlit as st
-from dotenv import dotenv_values
-# from dotenv import load_dotenv
+# from dotenv import dotenv_values
+from dotenv import load_dotenv
 import os
 import pickle
 from groq import Groq
@@ -141,9 +141,10 @@ def main():
     language_option = ""
 
     # Get the Groq API key and create a Groq client
-    groq_api_key = dotenv_values(".env")(st.secrets['GROQ'])
-    # load_dotenv()
-    # groq_api_key = os.environ['GROQ_API_KEY']
+    # groq_api_key = dotenv_values(".env")(st.secrets['GROQ'])
+    load_dotenv()
+    os.environ['GROQ'] == st.secrets['GROQ']
+    groq_api_key = os.environ['GROQ']
     client = Groq(
         api_key=groq_api_key,
         # base_url=st.secrets["GROQ_BASE_URL"]
