@@ -5,7 +5,7 @@ import os
 import pickle
 from groq import Groq
 from PyPDF2 import PdfReader
-from streamlit_extras.add_vertical_space import add_vertical_space
+#from streamlit_extras.add_vertical_space import add_vertical_space
 # from langchain.text_splitter import RecursiveCharacterTextSplitter
 # from langchain.VectorStores import FAISS
 # from langchain.chains import ConversationChain
