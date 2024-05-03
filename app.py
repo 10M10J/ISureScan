@@ -123,16 +123,15 @@ def main():
         st.title('ISureScan - Insurance Policy(PDF) Chatbot')
         st.markdown('''
         ## About
-        ISureScan.ai offers a revolutionary approach to insurance document management. 
-        Leveraging state-of-the-art natural language processing (NLP) and Generative AI (GenAI) technology,
-        our app empowers users to effortlessly upload insurance documents and extract essential information.
-        Ensure your health coverage! Upload your medical insurance policy in the provided box for personalized insights.
-        Need assistance or have questions? Use our AI chatbot for instant support and clarity. 
-        Your well-being matters to us!
+        Discover ISureScan.ai, transforming insurance document management with advanced NLP and GenAI. 
+        Effortlessly upload insurance documents for essential information extraction. 
+        Secure your health coverage by uploading your medical insurance policy for personalized insights. 
+        Utilize our AI chatbot for instant support and clarity. Your well-being matters!
 
         ''')
     #    add_vertical_space(5)
         st.write('Made in India :flag-in: by [StirPot](https://stirpot.in/)')
+        st.write('Please provide your experience here [Feedback Form](https://forms.gle/yafUgG4ig31jCXYPA)')
 
         model = "llama3-8b-8192"
 
