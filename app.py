@@ -150,13 +150,13 @@ def main():
         # base_url=st.secrets["GROQ_BASE_URL"]
     )
 
-    st.header("Chat with your Insurance Policy")
+    st.header("Chat with your Insurance Policy", divider='rainbow')
 
     language_option = st.radio('Select your preferred Language of interaction',
                                ('English', 'Hindi'), index=0, horizontal=True)
 
     # upload a pdf file
-    pdf = st.file_uploader("Upload your Insurance policy file ", type='pdf')
+    pdf = st.file_uploader("Upload your Insurance policy file (pdf only) ", type='pdf')
 
     # st.write(pdf)
     if pdf is not None:
